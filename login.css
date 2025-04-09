@@ -41,7 +41,7 @@ input {
 }
 
 .button { 
-    background-color: #6198c5;
+    background-color: #286699;
     color: white; 
     padding: 10px;
     width: 100%;
@@ -100,6 +100,15 @@ input {
     color: #00376b;
     text-decoration: none;
     font-size: 15px;  
+}
+
+.signup{
+    background-color: white;
+    border: 1px solid #dbdbdb;
+    width:320px;
+    padding: 30px 30px 10px;
+    text-align: center;
+    border-radius: 10px;
 }
 
 .signup a {

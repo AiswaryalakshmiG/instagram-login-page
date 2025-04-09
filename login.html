@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instagram Login</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="login.css">
     <link rel="icon" href="insta.jpg">
 </head>
 <body>
@@ -12,9 +12,7 @@
     <h1 class="heading1">Instagram</h1>
         <form onsubmit="return validatelogin()"  method="post">
              <input type="text" id="username" name="username" placeholder="Username, email, or phone" required>
-               <br>
              <input type="password" id="password" name="password" placeholder="Password" required>
-               <br>
              <button type="submit" class="button">Log In</button>
                 <div class="hline" >
                   <div class="line"></div>
@@ -25,17 +23,17 @@
                    <img src="facebook.png" alt="Facebook image">
                    <a href="https://www.facebook.com/login/?"> Log in with Facebook </a>
                 </div>
-                <br>
+              
                 <div class="forgot">
                    <a href="#">Forgot password?</a>
                 </div> 
         </form>
-                <br> 
-                <hr>
+      </div>   
+      <br> 
                 <div class="signup">
-                  <p>Don't have an account? <a href="#">Sign up</a></p>
+                  <p>Don't have an account? <a href="signup.html">Sign up</a></p>
                 </div> 
 
-  <script src="script.js"></script>
+  <script src="login.js"></script>
 </body>
 </html>
