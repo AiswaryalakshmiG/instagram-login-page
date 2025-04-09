@@ -1,93 +1,112 @@
-.heading1{
-font-family: Cursive, "Lucida Console", "Courier New", monospace;  /*font fallback*/
-text-align: center;
-font-size: 40px;
-font-style: oblique;
-color:#427cac ;
-margin-top: 50px;
-font-variant: small-caps; /* Specifies whether or not a text should be displayed in a small-caps font*/
-font-weight: 900; /* thick or thin characters*/
-}
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: aliceblue;
-    text-align: center;
-    margin: auto;
-    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh ;
+    margin: 0;
 }
 
-.user{
-    text-align: center;
-    margin: auto;
+.login{
     background-color: white;
-    padding-top: 50px;
-    padding-right: 30px;
-    padding-bottom: 50px;
-    padding-left: 80px;
+    border: 1px solid #dbdbdb;
+    width:320px;
+    padding: 40px 30px;
+    text-align: center;
     border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    margin-top: 40px;
+}
 
+.heading1{
+     font-family: Cursive, "Lucida Console", "Courier New", monospace;  /*font fallback*/
+     text-align: center;
+     font-size: 40px;
+     font-style: oblique;
+     color:#427cac ;
+     margin-top: 50px;
+     font-variant: small-caps; /* small-caps font */
+     font-weight: 900; /* thick or thin characters*/
 }
 
 input {
     width: 100%; 
     padding: 10px;
-    margin: 10px ; 
+    margin: 6px 0 ; 
     border: 1px solid grey; 
     border-radius: 5px; 
+    font-size: 14px;
     box-sizing: border-box; 
+
 }
 
-.button {
+.button { 
     background-color: #6198c5;
     color: white; 
     padding: 10px;
     width: 100%;
+    border: none;
     border-radius: 5px;
-    margin: 10px ; 
-    cursor: pointer;  /*mouse cursors*/
+    font-weight: bold;
+    margin-top: 10px ; 
+    cursor: pointer; /*mouse cursors*/
     box-sizing: border-box; 
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);   
 }
 
 .button:hover{
     background-color: rgb(16, 59, 99);
 }
 
-.forgot{
-    margin: 20px;
-    font-size: small;
-    color: rgb(6, 48, 65);
-    display: inline-block;
-    position: relative;
+.hline{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
 }
 
-a.signup {
-    color: #3f729b;
-    
+.line{
+    flex: 1;
+    height: 1px ;
+    background-color: gray;
 }
 
 .or {
-    margin: 20px;
-    text-align: center;
-    position: relative;
-    display: inline-block; /* Makes it fit content and not take full width */
+    margin: 0 10px;
+    color: gray;
+    font-size: 15px;
+    font-weight: bold;
 }
 
-.or::before, .or::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    width: 45%;
-    height: 1px;
-    background-color: #ccc;
+.facebook{
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
 }
 
-.or::before {
-    left: 0;
+.facebook img{ 
+    width:20px;
+    height:20px;
 }
 
-.or::after {
-    right: 0;
+.facebook a{
+    color:rgb(26, 75, 139) ;
+    font-weight: 400 ;
+    text-decoration: none;
+    font-size: 15px;
 }
+
+.forgot a{
+    margin-top: 10px; 
+    color: #00376b;
+    text-decoration: none;
+    font-size: 15px;  
+}
+
+.signup a {
+    color: #00376b;
+    text-decoration: none;
+    margin-top: 10px;  
+    font-weight: bold;  
+}
+
+ 
