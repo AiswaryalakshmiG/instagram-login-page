@@ -1,28 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instagram Signup</title>
-<link rel="stylesheet" href="signup.css">
-    <link rel="icon" href="insta.jpg">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram Signup</title>
+  <link rel="stylesheet" href="signup.css">
+  <link rel="icon" href="insta.jpg">
 </head>
 <body>
-    <div class="signup">
-        <h1 class="heading1">Instagram</h1>
-        <p class="tosee">Sing up to see photos and viedos from your friends</p>
-       <form onsubmit="return creatinguser()" method="post">
-         <input type="text" id="mail" name="number" placeholder="Mobile number or Email" required>
-         <input type="text" id="fullname" name="fullname" placeholder="Full Name">
-         <input type="text" id="username" name="createusername" placeholder="User Name" required>
-         <input type="password" id="password" name="createpassword" placeholder="Password">
-         <button type="submit" class="button">Sign Up</button>
-       </form>
-    
-         <p class="terms">By signing up, you agree to our Terms, Data Policy and Cookies Policy </p>
-    </div>
-    <div class="login">
-         <p>Have an account? <a href="login.html">Log in</a></p>
-    </div>
+
+  <div class="signup">
+    <h1 class="heading1">Instagram</h1>
+    <p class="tosee">Sign up to see photos and videos from your friends</p>
+
+    <form onsubmit="return creatinguser()" method="post">
+      <input type="text" id="mail" name="number" placeholder="Mobile number or Email" required>
+      <input type="text" id="fullname" name="fullname" placeholder="Full Name">
+      <input type="text" id="username" name="createusername" placeholder="User Name" required>
+      <input type="password" id="password" name="createpassword" placeholder="Password" required>
+      <button type="submit" class="button">Sign Up</button>
+    </form>
+
+    <p class="terms">
+      By signing up, you agree to our <b>Terms</b>, <b>Data Policy</b> and <b>Cookies Policy</b>
+    </p>
+  </div>
+
+  <div class="login">
+    <p>Have an account? <a href="login.html">Log in</a></p>
+  </div>
+
+  <script src="signup.js"></script>
 </body>
 </html>
