@@ -82,13 +82,6 @@ input {
     position: relative;
   }
   
-.seperator hr:first-child {
-    margin-right: 5%;
-  }
-  
-.seperator hr:last-child {
-    margin-left: 5%;
-  }
 
 .facebook a{
     color:rgb(26, 75, 139) ;
